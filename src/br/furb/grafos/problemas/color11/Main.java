@@ -16,7 +16,15 @@ import java.util.Scanner;
  */
 public class Main {
 
-    private static final String CAMINHO_ARQUIVO_PARAMETROS = "C:\\temp\\entrada.in";
+    private static final String CAMINHO_ARQUIVO_PARAMETROS;
+
+    static {
+        if (System.getProperty("os.name").toLowerCase().contains("win")) {
+            CAMINHO_ARQUIVO_PARAMETROS = "C:\\temp\\entrada.in";
+        } else {
+            CAMINHO_ARQUIVO_PARAMETROS = "/tmp/entrada.in";
+        }
+    }
 
     public static void main(String[] args) throws Exception {
         System.out.println("Problema de grafos Color11");
