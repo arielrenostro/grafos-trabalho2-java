@@ -1,6 +1,6 @@
 package br.furb.grafos.problemas.color11.problema;
 
-import br.furb.grafos.problemas.color11.Utils.StringUtils;
+import br.furb.grafos.problemas.base.utils.StringUtils;
 import br.furb.grafos.problemas.color11.dto.Coordenada;
 import br.furb.grafos.problemas.color11.dto.ParametrosColor11DTO;
 

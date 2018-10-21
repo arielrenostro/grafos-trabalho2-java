@@ -19,7 +19,7 @@ public class Main {
     private static final String CAMINHO_ARQUIVO_PARAMETROS = "C:\\temp\\entrada.in";
 
     public static void main(String[] args) throws Exception {
-        System.out.println("Problema de grafos Main");
+        System.out.println("Problema de grafos Color11");
         System.out.println("Resolução por: Ariel e Sidnei");
         System.out.println();
 

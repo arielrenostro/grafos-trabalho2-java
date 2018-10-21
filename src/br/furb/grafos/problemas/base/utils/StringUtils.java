@@ -1,4 +1,4 @@
-package br.furb.grafos.problemas.color11.Utils;
+package br.furb.grafos.problemas.base.utils;
 
 /**
  * @author ariel e sidnei
