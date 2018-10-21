@@ -17,11 +17,19 @@ import java.util.concurrent.atomic.AtomicInteger;
  */
 public class Main {
 
-    private static final String CAMINHO_ARQUIVO_PARAMETROS = "C:\\temp\\entrada.in";
+    private static final String CAMINHO_ARQUIVO_PARAMETROS;
 
     private static final int CABECALHO = 0;
     private static final int RUAS = 1;
     private static final int FINAL = 2;
+
+    static {
+        if (System.getProperty("os.name").toLowerCase().contains("win")) {
+            CAMINHO_ARQUIVO_PARAMETROS = "C:\\temp\\entrada.in";
+        } else {
+            CAMINHO_ARQUIVO_PARAMETROS = "/tmp/entrada.in";
+        }
+    }
 
     public static void main(String[] args) throws Exception {
         System.out.println("Problema de grafos Engarraf");
